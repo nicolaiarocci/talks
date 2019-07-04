@@ -6,6 +6,10 @@
 
 ***
 
+<img src="images/communitydays-cover.png" class="nb"/>
+
+***
+
 # _<span style="font-weight:300">Introduction to F#</span><br/> and functional programming <br/>for the C# developer_
 
 <br/><br/><br/><br/><br/><br/>
