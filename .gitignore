@@ -11,3 +11,5 @@ credentials.fsx
 .fake
 node_modules
 obj
+.packet
+Packet.Restore.targets
