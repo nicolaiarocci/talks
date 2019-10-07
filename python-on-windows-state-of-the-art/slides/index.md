@@ -47,9 +47,47 @@ _3. Wonders of Python development on Windows_
 </div>
 <div class="fragment">
 
-_4. Not kidding about #3_
+_(Not kidding about #3)_
 
 </div>
+
+***
+
+<img src="images/PyPI_downloads_by_OS.png" class="nb"/>
+
+---
+
+<img src="images/Conda_downloads_by_OS.png" class="nb"/>
+
+---
+
+<img src="images/OS_choice_by_PSF_survey.png" class="nb"/>
+
+---
+
+<img src="images/OS_choice_by_VSCode_users.png" class="nb"/>
+
+---
+
+<img src="images/OS_choice_by_PyCharm_users.png" class="nb"/>
+
+---
+
+<img src="images/PythonOrg_downloads.png" class="nb"/>
+
+---
+
+<img src="images/24_million.png" class="nb"/>
+
+---
+
+## Python userbase out there
+<img src="images/community_1.png" class="nb"/>
+
+---
+
+## Python userbase in our perception
+<img src="images/community_2.png" class="nb"/>
 
 ***
 
