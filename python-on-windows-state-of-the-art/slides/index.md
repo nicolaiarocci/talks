@@ -6,7 +6,7 @@
 
 ***
 
-# _State of the Art<br/><span style="font-weight:300">Python on Windows</span>_
+# _Python on Windows<br/><span style="font-weight:300">State of the Art</span>_
 
 <br/><br/><br/><br/><br/><br/>
 
