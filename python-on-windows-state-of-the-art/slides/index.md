@@ -81,13 +81,43 @@ _(Not kidding about #3)_
 
 ---
 
-## Python userbase out there
+## Python userbase 
 <img src="images/community_1.png" class="nb"/>
 
 ---
 
-## Python userbase in our perception
+## Python userbase (our perception)
 <img src="images/community_2.png" class="nb"/>
+
+---
+
+## Make sure your libs "just work" on Windows
+<div class="fragment">
+
+- Make sure `-m` works on your project
+
+</div>
+<div class="fragment">
+
+- Use `pathlib.path` to handle paths
+
+</div>
+<div class="fragment">
+
+- Adopt `appdirs` to store user and configuration data
+
+</div>
+<div class="fragment">
+
+- Use `str` to let Python handle OS conversions<br/>
+  (do your own IO stream conversions)
+
+</div>
+<div class="fragment">
+
+- Get CI, or collaborate, or...
+
+</div>
 
 ***
 
