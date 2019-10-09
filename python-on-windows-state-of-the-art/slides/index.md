@@ -89,7 +89,7 @@ _(Not kidding about #3)_
 ## Python userbase (our perception)
 <img src="images/community_2.png" class="nb"/>
 
----
+***
 
 ## Make sure your libs "just work" on Windows
 <div class="fragment">
@@ -109,15 +109,76 @@ _(Not kidding about #3)_
 </div>
 <div class="fragment">
 
-- Use `str` to let Python handle OS conversions<br/>
-  (do your own IO stream conversions)
+- Use `str` and let Python handle OS conversions.
+  Do your own IO stream conversions
 
 </div>
 <div class="fragment">
 
-- Get CI, or collaborate, or...
+- Get CI or collaborate (we'll get back to this)
 
 </div>
+
+(more info at https://youtu.be/uoI57uMdDD4)
+
+***
+
+## _Python development <span style="font-weight:300">on Windows</span>_
+
+<div class="fragment">
+
+- Python tooling has been rapidly evolving
+
+</div>
+<div class="fragment">
+
+- One-click install from the Windows Store
+
+</div>
+<div class="fragment">
+
+- Visual Studio (all editions) full support for Python
+
+</div>
+<div class="fragment">
+
+- Code+Python extension works seamlessly 
+
+</div>
+<div class="fragment">
+
+- Windows Subsystem for Linux (oh, the coolness)
+
+</div>
+<div class="fragment">
+
+- A brand new Windows Terminal
+
+</div>
+
+*** 
+
+## _One-click install from the Store_
+
+<img src="images/store.jpeg" class="nb"/>
+
+***
+
+## _Visual Studio_
+
+- Install Python from the VS Installer
+- Package Management
+- Virtual Environments
+- IntelliSense and code analysis
+- Interactive debugging (remote too)
+- Unit Tests
+- REPL
+- Templates (Django, Flask, PyGame, etc.)
+- Code Imports
+- Jupyter, etc.
+- Community edition is free and open source
+
+_PyCharm also works great on Windows._
 
 ***
 
