@@ -132,27 +132,27 @@ _(Not kidding about #3)_
 </div>
 <div class="fragment">
 
-- One-click install from the Windows Store
+- One-click install from the Microsoft Store
 
 </div>
 <div class="fragment">
 
-- Visual Studio (all editions) full support for Python
+- Visual Studio has great Python support
 
 </div>
 <div class="fragment">
 
-- Code+Python extension works seamlessly 
-
-</div>
-<div class="fragment">
-
-- Windows Subsystem for Linux (oh, the coolness)
+- VSCode+Python extension works on Windows too
 
 </div>
 <div class="fragment">
 
 - A brand new Windows Terminal
+
+</div>
+<div class="fragment">
+
+- One last thing
 
 </div>
 
@@ -162,23 +162,87 @@ _(Not kidding about #3)_
 
 <img src="images/store.jpeg" class="nb"/>
 
-***
+---
 
 ## _Visual Studio_
 
-- Install Python from the VS Installer
+- Python install from VS Installer
 - Package Management
 - Virtual Environments
 - IntelliSense and code analysis
 - Interactive debugging (remote too)
 - Unit Tests
-- REPL
 - Templates (Django, Flask, PyGame, etc.)
 - Code Imports
-- Jupyter, etc.
-- Community edition is free and open source
+- Jupyter support
+- REPL
+- Community edition is free 
 
 _PyCharm also works great on Windows._
+
+---
+
+# _Windows Terminal (Preview)_
+
+<img src="images/terminal.jpeg" class="nb"/>
+
+---
+
+## _Windows Terminal (Preview)_
+
+- Multiple Tabs
+- Command Prompt, PowerShell, Linux
+- GPU accelerated text rendering
+- glyps, emojis, ideograms, symbols, icons, ligatures
+- Fully configurable and custimizable via json 
+- Multiple profiles
+- One-click install from the Microsoft Store
+- Cascadia Code font, with ligatures (Preview)
+- [Open Source at GitHub](https://github.com/Microsoft/Terminal) (MIT)
+
+(cool video at https://aka.ms/terminal-video)
+
+***
+
+# Windows Subsystem for Linux 2
+
+<img src="images/runwsl.gif" height="400" class="nb"/>
+
+---
+
+## WSL2 Quick Facts
+
+<div class="fragment">
+
+- WSL2 runs ELF64 Linux binaries on Windows
+
+</div>
+<div class="fragment">
+
+- Windows ships a WSL2-tuned Linux kernel 
+
+</div>
+<div class="fragment">
+
+- WSL2 runs on a lightweight utility virtual machine
+
+</div>
+<div class="fragment">
+
+- Super fast boot, small footprint, zero configuration
+
+</div>
+<div class="fragment">
+
+- [WSL2 and Linux kernel are Open Source](https://github.com/microsoft/WSL2-Linux-Kernel)
+
+</div>
+
+---
+
+# One-click install of Linux distributions
+
+<img src="images/store.png" height="400" class="nb"/>
 
 ***
 
