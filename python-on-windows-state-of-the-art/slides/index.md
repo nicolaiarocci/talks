@@ -243,14 +243,14 @@ _PyCharm also works great on Windows._
 
 ---
 
-# One-click install of Linux distributions
+# _One-click install of Linux distributions_
 
 <img src="images/store.png" height="400" class="nb"/>
 
 ---
 
-# DEMO #1
-## Linux on Windows, with the new Terminal
+# _DEMO #1_
+## _LINUX ON WINDOWS, WITH TERMINAL_
 
 ***
 
@@ -282,8 +282,37 @@ _PyCharm also works great on Windows._
 
 ---
 
-# DEMO #2
-## VSCode with Remote extension
+# _DEMO #2_
+## _Code + Remote + Linux_
+
+---
+
+# _WSL2 IS IN PREVIEW_
+## _JOIN THE INSIDER PROGRAM (Fast ring)_
+
+<img src="images/insiderprogram.png" class="nb"/>
+
+---
+# _You also need to know_
+## _So you can avoid pain_
+
+- BIOS virtualization must be active
+- Virtual Machine Platform feature must be active
+- WSL feature must be active
+- distros will be on WSL1 once installed
+- status: `wsl --list --verbose` _*_
+- switch to v2: `wsl --set-version Ubuntu 2` _*_
+- set v2 as default: `wsl --set-default-version 2` _*_
+
+_(*) in PowerShell, as admin_
+
+---
+
+## _Suggested reading_ 
+
+<img src="images/reading.png" class="nb"/>
+
+Smashing Magazine ([link](https://www.smashingmagazine.com/2019/09/moving-javascript-development-bash-windows/))
 
 ***
 
