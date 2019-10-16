@@ -115,7 +115,7 @@ _(Not kidding about #3)_
 </div>
 <div class="fragment">
 
-- Get CI or collaborate (we'll get back to this)
+- Get CI, collaborate, or...
 
 </div>
 
@@ -152,7 +152,7 @@ _(Not kidding about #3)_
 </div>
 <div class="fragment">
 
-- One last thing
+- Windows Subsystem for Linux 2
 
 </div>
 
@@ -162,7 +162,7 @@ _(Not kidding about #3)_
 
 <img src="images/store.jpeg" class="nb"/>
 
----
+*** 
 
 ## _Visual Studio_
 
@@ -180,7 +180,7 @@ _(Not kidding about #3)_
 
 _PyCharm also works great on Windows._
 
----
+*** 
 
 # _Windows Terminal (Preview)_
 
@@ -196,9 +196,8 @@ _PyCharm also works great on Windows._
 - glyps, emojis, ideograms, symbols, icons, ligatures
 - Fully configurable and custimizable via json 
 - Multiple profiles
-- One-click install from the Microsoft Store
 - Cascadia Code font, with ligatures (Preview)
-- [Open Source at GitHub](https://github.com/Microsoft/Terminal) (MIT)
+- Terminal is Open Source ([link](https://github.com/Microsoft/Terminal)) 
 
 (cool video at https://aka.ms/terminal-video)
 
@@ -210,31 +209,35 @@ _PyCharm also works great on Windows._
 
 ---
 
-## WSL2 Quick Facts
+# _WSL2 Quick Facts_
+## Runs ELF64 Linux binaries on Windows
 
+<img src="images/hello.png" height="400" class="nb"/>
+
+---
+
+# _WSL2 Quick Facts_
+## Windows ships with a Linux kernel
+
+<img src="images/kali.png" height="400" class="nb"/>
+
+---
+
+# _WSL2 Quick Facts_
+## 
 <div class="fragment">
 
-- WSL2 runs ELF64 Linux binaries on Windows
+- WSL2 runs on a **lightweight** utility virtual machine
 
 </div>
 <div class="fragment">
 
-- Windows ships a WSL2-tuned Linux kernel 
+- Super **fast boot**, small footprint, **zero configuration**
 
 </div>
 <div class="fragment">
 
-- WSL2 runs on a lightweight utility virtual machine
-
-</div>
-<div class="fragment">
-
-- Super fast boot, small footprint, zero configuration
-
-</div>
-<div class="fragment">
-
-- [WSL2 and Linux kernel are Open Source](https://github.com/microsoft/WSL2-Linux-Kernel)
+- Both WSL2 and Linux kernel are Open Source ([link](https://github.com/microsoft/WSL2-Linux-Kernel))
 
 </div>
 
@@ -243,6 +246,44 @@ _PyCharm also works great on Windows._
 # One-click install of Linux distributions
 
 <img src="images/store.png" height="400" class="nb"/>
+
+---
+
+# DEMO #1
+## Linux on Windows, with the new Terminal
+
+***
+
+# _Code + Remote + Linux_
+## _What are we looking at?_
+
+<img src="images/code+wsl1.png" class="nb"/>
+
+---
+
+# _Code + Remote + Linux_
+## _Windows-side Code, connected to Linux_
+
+<img src="images/code+wsl2.png" class="nb"/>
+
+---
+
+# _Code + Remote + Linux_
+## _Courtesy of Remote extension_
+
+<img src="images/code+wsl3.png" class="nb"/>
+
+---
+
+# _Code + Remote + Linux_
+## _Extensions work across boundaries_
+
+<img src="images/code+wsl4.png" class="nb"/>
+
+---
+
+# DEMO #2
+## VSCode with Remote extension
 
 ***
 
