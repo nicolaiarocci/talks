@@ -52,7 +52,7 @@
 <div class="tip" id="fs4">Multiple items<br />val double : value:&#39;T -&gt; double (requires member op_Explicit)<br /><br />Full name: Microsoft.FSharp.Core.ExtraTopLevelOperators.double<br /><br />--------------------<br />type double = System.Double<br /><br />Full name: Microsoft.FSharp.Core.double</div>
 <div class="tip" id="fs5">val printfn : format:Printf.TextWriterFormat&lt;&#39;T&gt; -&gt; &#39;T<br /><br />Full name: Microsoft.FSharp.Core.ExtraTopLevelOperators.printfn</div>
 <div class="tip" id="fs6">type &#39;T list = List&lt;&#39;T&gt;<br /><br />Full name: Microsoft.FSharp.Collections.list&lt;_&gt;</div>
-<div class="tip" id="fs7">Multiple items<br />module List<br /><br />from Microsoft.FSharp.Collections<br /><br />--------------------<br />type List&lt;&#39;T&gt; =<br />&#160;&#160;| ( [] )<br />&#160;&#160;| ( :: ) of Head: &#39;T * Tail: &#39;T list<br />&#160;&#160;interface IReadOnlyCollection&lt;&#39;T&gt;<br />&#160;&#160;interface IEnumerable<br />&#160;&#160;interface IEnumerable&lt;&#39;T&gt;<br />&#160;&#160;member GetSlice : startIndex:int option * endIndex:int option -&gt; &#39;T list<br />&#160;&#160;member Head : &#39;T<br />&#160;&#160;member IsEmpty : bool<br />&#160;&#160;member Item : index:int -&gt; &#39;T with get<br />&#160;&#160;member Length : int<br />&#160;&#160;member Tail : &#39;T list<br />&#160;&#160;static member Cons : head:&#39;T * tail:&#39;T list -&gt; &#39;T list<br />&#160;&#160;static member Empty : &#39;T list<br /><br />Full name: Microsoft.FSharp.Collections.List&lt;_&gt;</div>
+<div class="tip" id="fs7">Multiple items<br />module List<br /><br />from Microsoft.FSharp.Collections<br /><br />--------------------<br />type List&lt;&#39;T&gt; =<br />&#160;&#160;| ( [] )<br />&#160;&#160;| ( :: ) of Head: &#39;T * Tail: &#39;T list<br />&#160;&#160;interface IEnumerable<br />&#160;&#160;interface IEnumerable&lt;&#39;T&gt;<br />&#160;&#160;member GetSlice : startIndex:int option * endIndex:int option -&gt; &#39;T list<br />&#160;&#160;member Head : &#39;T<br />&#160;&#160;member IsEmpty : bool<br />&#160;&#160;member Item : index:int -&gt; &#39;T with get<br />&#160;&#160;member Length : int<br />&#160;&#160;member Tail : &#39;T list<br />&#160;&#160;static member Cons : head:&#39;T * tail:&#39;T list -&gt; &#39;T list<br />&#160;&#160;static member Empty : &#39;T list<br /><br />Full name: Microsoft.FSharp.Collections.List&lt;_&gt;</div>
 <div class="tip" id="fs8">val fold : folder:(&#39;State -&gt; &#39;T -&gt; &#39;State) -&gt; state:&#39;State -&gt; list:&#39;T list -&gt; &#39;State<br /><br />Full name: Microsoft.FSharp.Collections.List.fold</div>
 <div class="tip" id="fs9">Multiple items<br />val decimal : value:&#39;T -&gt; decimal (requires member op_Explicit)<br /><br />Full name: Microsoft.FSharp.Core.Operators.decimal<br /><br />--------------------<br />type decimal = System.Decimal<br /><br />Full name: Microsoft.FSharp.Core.decimal<br /><br />--------------------<br />type decimal&lt;&#39;Measure&gt; = decimal<br /><br />Full name: Microsoft.FSharp.Core.decimal&lt;_&gt;</div>
 
@@ -61,9 +61,8 @@
             <section >
 <h1><em><span style="font-weight:300">Introduction to F#</span><br/> and functional programming <br/>for the C# developer</em></h1>
 <br/><br/><br/><br/><br/><br/>
-<p><strong>Nicola Iarocci</strong></p>
-<p>Software Craftsman, MVP<br/>
-<a href="https://nicolaiarocci.com">nicolaiarocci.com</a> | <a href="https://twitter.com/nicolaiarocci">@nicolaiarocci</a></p>
+<p><strong>Nicola Iarocci</strong><br/>
+<a href="https://twitter.com/nicolaiarocci">@nicolaiarocci</a></p>
 </section>
 <section >
 <h1><em>Disclaimer</em></h1>
@@ -93,9 +92,6 @@ I’m rather gonna show the differences in philosopy with C#<br/>
 <blockquote>
 <p>A language that doesn't affect the way you think about programming, is not worth knowing - <a href="https://en.wikipedia.org/wiki/Alan_Perlis">Alan Perlis</a></p>
 </blockquote>
-<br/>
-<br/>
-<br/>
 </div>
 <div class="fragment">
 <ul>
