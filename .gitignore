@@ -13,3 +13,4 @@ node_modules
 obj
 .packet
 Packet.Restore.targets
+.ionide/

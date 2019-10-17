@@ -10,10 +10,8 @@
 
 <br/><br/><br/><br/><br/><br/>
 
-**Nicola Iarocci**
-
-Software Craftsman, MVP<br/>
-[nicolaiarocci.com](https://nicolaiarocci.com) | [@nicolaiarocci](https://twitter.com/nicolaiarocci)
+**Nicola Iarocci**<br/>
+[@nicolaiarocci](https://twitter.com/nicolaiarocci)
 
 ***
 
@@ -53,10 +51,6 @@ _I'll try not to be too biased_
 <div class="fragment">
 
 > A language that doesn't affect the way you think about programming, is not worth knowing - [Alan Perlis](https://en.wikipedia.org/wiki/Alan_Perlis)
-
-<br/>
-<br/>
-<br/>
 
 </div>
 
