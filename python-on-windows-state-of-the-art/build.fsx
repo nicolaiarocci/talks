@@ -14,7 +14,7 @@ let gitHome = "https://github.com/" + gitOwner
 // The name of the project on GitHub
 let gitProjectName = "talks"
 // The name of the GitHub repo subdirectory to publish slides to
-let gitSubDir = "fsharp-for-csharp-developers"
+let gitSubDir = "python-on-windows-state-of-the-art"
 
 open FsReveal
 open Fake
