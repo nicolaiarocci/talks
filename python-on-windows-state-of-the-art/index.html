@@ -1,0 +1,357 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Python on Windows</title>
+    <meta name="description" content="The State of the Art of Developing with Python on Windows">
+    <meta name="author" content="Nicola Iarocci">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="//code.jquery.com/jquery-1.8.0.js"></script>
+    <script src="//code.jquery.com/ui/1.8.23/jquery-ui.js"></script>
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/simple.css" id="theme">
+    <link type="text/css" rel="stylesheet" href="fsharp.formatting/styles/style.css" />
+    <link type="text/css" rel="stylesheet" href="fsharp.formatting/styles/deedle.css" />
+    <link type="text/css" rel="stylesheet" href="css/custom.css" />
+    <script src="fsharp.formatting/styles/tips.js" type="text/javascript"></script>
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="css/fsreveal.css">
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+    </script>
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+    <script language="javascript" type="text/javascript">
+        function init()
+        {
+            websocket = new WebSocket("ws://"+window.location.host+"/websocket");
+            websocket.onmessage = function(evt) { location.reload(); };
+        }
+        window.addEventListener("load", init, false);
+    </script>
+</head>
+<body>
+    <div class="reveal">
+        
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section >
+<h1><em>Python on Windows<br/><span style="font-weight:300">State of the Art</span></em></h1>
+<br/><br/><br/><br/><br/><br/>
+<p>Nicola Iarocci<br/>
+<a href="https://twitter.com/nicolaiarocci">@nicolaiarocci</a></p>
+</section>
+<section >
+<section >
+<h1>Question</h1>
+<p>How many of you in this room are on Windows?
+<div class="fragment"></p>
+<p><em>I am not surprised</em></p>
+</div>
+</section>
+<section >
+<h1><em>The Goals of this talk</em></h1>
+<h2>Quite ambitious ones</h2>
+<div class="fragment">
+<p><em>1. Awareness of Windows relevance for Python</em></p>
+</div>
+<div class="fragment">
+<p><em>2. Make your code "just work" on Windows</em></p>
+</div>
+<div class="fragment">
+<p><em>3. Wonders of Python development on Windows</em></p>
+</div>
+<div class="fragment">
+<p><em>(Not kidding about #3)</em></p>
+</div>
+</section>
+</section>
+<section >
+<section >
+<img src="images/PyPI_downloads_by_OS.png" class="nb"/>
+</section>
+<section >
+<img src="images/Conda_downloads_by_OS.png" class="nb"/>
+</section>
+<section >
+<img src="images/OS_choice_by_PSF_survey.png" class="nb"/>
+</section>
+<section >
+<img src="images/OS_choice_by_VSCode_users.png" class="nb"/>
+</section>
+<section >
+<img src="images/OS_choice_by_PyCharm_users.png" class="nb"/>
+</section>
+<section >
+<img src="images/PythonOrg_downloads.png" class="nb"/>
+</section>
+<section >
+<img src="images/24_million.png" class="nb"/>
+</section>
+<section >
+<h2>Python userbase</h2>
+<img src="images/community_1.png" class="nb"/>
+</section>
+<section >
+<h2>Python userbase (our perception)</h2>
+<img src="images/community_2.png" class="nb"/>
+</section>
+</section>
+<section >
+<h2>Make sure your libs "just work" on Windows</h2>
+<div class="fragment">
+<ul>
+<li>Make sure <code>-m</code> works on your project</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Use <code>pathlib.path</code> to handle paths</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Adopt <code>appdirs</code> to store user and configuration data</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>
+Use <code>str</code> and let Python handle OS conversions.
+Do your own IO stream conversions
+</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Get CI, collaborate, or...</li>
+</ul>
+</div>
+<p>(more info at <a href="https://youtu.be/uoI57uMdDD4)">https://youtu.be/uoI57uMdDD4)</a></p>
+</section>
+<section >
+<h2><em>Python development <span style="font-weight:300">on Windows</span></em></h2>
+<div class="fragment">
+<ul>
+<li>Python tooling has been rapidly evolving</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>One-click install from the Microsoft Store</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Visual Studio has great Python support</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>VSCode+Python extension works on Windows too</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>A brand new Windows Terminal</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Windows Subsystem for Linux 2</li>
+</ul>
+</div>
+</section>
+<section >
+<h2><em>One-click install from the Store</em></h2>
+<img src="images/store.jpeg" class="nb"/>
+</section>
+<section >
+<h2><em>Visual Studio</em></h2>
+<ul>
+<li>Python install from VS Installer</li>
+<li>Package Management</li>
+<li>Virtual Environments</li>
+<li>IntelliSense and code analysis</li>
+<li>Interactive debugging (remote too)</li>
+<li>Unit Tests</li>
+<li>Templates (Django, Flask, PyGame, etc.)</li>
+<li>Code Imports</li>
+<li>Jupyter support</li>
+<li>REPL</li>
+<li>Community edition is free</li>
+</ul>
+<p><em>PyCharm also works great on Windows.</em></p>
+</section>
+<section >
+<section >
+<h1><em>Windows Terminal (Preview)</em></h1>
+<img src="images/terminal.jpeg" class="nb"/>
+</section>
+<section >
+<h2><em>Windows Terminal (Preview)</em></h2>
+<ul>
+<li>Multiple Tabs</li>
+<li>Command Prompt, PowerShell, Linux</li>
+<li>GPU accelerated text rendering</li>
+<li>glyps, emojis, ideograms, symbols, icons, ligatures</li>
+<li>Fully configurable and custimizable via json</li>
+<li>Multiple profiles</li>
+<li>Cascadia Code font, with ligatures (Preview)</li>
+<li>Terminal is Open Source (<a href="https://github.com/Microsoft/Terminal">link</a>)</li>
+</ul>
+<p>(cool video at <a href="https://aka.ms/terminal-video)">https://aka.ms/terminal-video)</a></p>
+</section>
+</section>
+<section >
+<section >
+<h1>Windows Subsystem for Linux 2</h1>
+<img src="images/runwsl.gif" height="400" class="nb"/>
+</section>
+<section >
+<h1><em>WSL2 Quick Facts</em></h1>
+<h2>Runs ELF64 Linux binaries on Windows</h2>
+<img src="images/hello.png" height="400" class="nb"/>
+</section>
+<section >
+<h1><em>WSL2 Quick Facts</em></h1>
+<h2>Windows ships with a Linux kernel</h2>
+<img src="images/kali.png" height="400" class="nb"/>
+</section>
+<section >
+<h1><em>WSL2 Quick Facts</em></h1>
+<h2></h2>
+<div class="fragment">
+<ul>
+<li>WSL2 runs on a <strong>lightweight</strong> utility virtual machine</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Super <strong>fast boot</strong>, small footprint, <strong>zero configuration</strong></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Both WSL2 and Linux kernel are Open Source (<a href="https://github.com/microsoft/WSL2-Linux-Kernel">link</a>)</li>
+</ul>
+</div>
+</section>
+<section >
+<h1><em>One-click install of Linux distributions</em></h1>
+<img src="images/store.png" height="400" class="nb"/>
+</section>
+<section >
+<h1><em>DEMO #1</em></h1>
+<h2><em>LINUX ON WINDOWS, WITH TERMINAL</em></h2>
+</section>
+</section>
+<section >
+<section >
+<h1><em>Code + Remote + Linux</em></h1>
+<h2><em>What are we looking at?</em></h2>
+<img src="images/code+wsl1.png" class="nb"/>
+</section>
+<section >
+<h1><em>Code + Remote + Linux</em></h1>
+<h2><em>Windows-side Code, connected to Linux</em></h2>
+<img src="images/code+wsl2.png" class="nb"/>
+</section>
+<section >
+<h1><em>Code + Remote + Linux</em></h1>
+<h2><em>Courtesy of Remote extension</em></h2>
+<img src="images/code+wsl3.png" class="nb"/>
+</section>
+<section >
+<h1><em>Code + Remote + Linux</em></h1>
+<h2><em>Extensions work across boundaries</em></h2>
+<img src="images/code+wsl4.png" class="nb"/>
+</section>
+<section >
+<h1><em>DEMO #2</em></h1>
+<h2><em>Code + Remote + Linux</em></h2>
+</section>
+<section >
+<h1><em>WSL2 IS IN PREVIEW</em></h1>
+<h2><em>JOIN THE INSIDER PROGRAM (Fast ring)</em></h2>
+<img src="images/insiderprogram.png" class="nb"/>
+</section>
+<section >
+<h1><em>You also need to know</em></h1>
+<h2><em>So you can avoid pain</em></h2>
+<ul>
+<li>BIOS virtualization must be active</li>
+<li>Virtual Machine Platform feature must be active</li>
+<li>WSL feature must be active</li>
+<li>distros will be on WSL1 once installed</li>
+<li>status: <code>wsl --list --verbose</code> <em>*</em></li>
+<li>switch to v2: <code>wsl --set-version Ubuntu 2</code> <em>*</em></li>
+<li>set v2 as default: <code>wsl --set-default-version 2</code> <em>*</em></li>
+</ul>
+<p><em>(*) in PowerShell, as admin</em></p>
+</section>
+<section >
+<h2><em>Suggested reading</em></h2>
+<img src="images/reading.png" class="nb"/>
+<p>Smashing Magazine (<a href="https://www.smashingmagazine.com/2019/09/moving-javascript-development-bash-windows/">link</a>)</p>
+</section>
+</section>
+<section >
+<h1><em>Thank You!</em></h1>
+<br/><br/><br/><br/><br/><br/>
+<p>Nicola Iarocci<br/>
+<a href="https://twitter.com/nicolaiarocci">@nicolaiarocci</a></p>
+</section>
+
+
+        </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+        // Add the nohighlight class and data-noescape attribute to code elements that have already been formatted by FSharp.Formatting
+        $('pre.highlighted code').addClass('nohighlight').attr('data-noescape', '');
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            transition: 'none', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            // parallaxBackgroundSize: '2100px 900px',
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList; } },
+                { src: 'plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList; } }
+            ]
+        });
+
+    </script>
+</body>
+</html>
+
