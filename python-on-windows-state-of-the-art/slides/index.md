@@ -24,7 +24,7 @@ _I am not surprised_
 
 </div>
 
----
+***
 
 # _The Goals of this talk_
 
@@ -55,36 +55,36 @@ _(Not kidding about #3)_
 
 <img src="images/PyPI_downloads_by_OS.png" class="nb"/>
 
----
+***
 
 <img src="images/Conda_downloads_by_OS.png" class="nb"/>
 
----
+***
 
 <img src="images/OS_choice_by_PSF_survey.png" class="nb"/>
 
----
+***
 
 <img src="images/OS_choice_by_VSCode_users.png" class="nb"/>
 
----
+***
 
 <img src="images/OS_choice_by_PyCharm_users.png" class="nb"/>
 
----
+***
 
 <img src="images/PythonOrg_downloads.png" class="nb"/>
 
----
+***
 
 <img src="images/24_million.png" class="nb"/>
 
----
+***
 
 ## Python userbase 
 <img src="images/community_1.png" class="nb"/>
 
----
+***
 
 ## Python userbase (our perception)
 <img src="images/community_2.png" class="nb"/>
@@ -186,7 +186,7 @@ _PyCharm also works great on Windows._
 
 <img src="images/terminal.jpeg" class="nb"/>
 
----
+***
 
 ## _Windows Terminal (Preview)_
 
@@ -207,21 +207,21 @@ _PyCharm also works great on Windows._
 
 <img src="images/runwsl.gif" height="400" class="nb"/>
 
----
+***
 
 # _WSL2 Quick Facts_
 ## Runs ELF64 Linux binaries on Windows
 
 <img src="images/hello.png" height="400" class="nb"/>
 
----
+***
 
 # _WSL2 Quick Facts_
 ## Windows ships with a Linux kernel
 
 <img src="images/kali.png" height="400" class="nb"/>
 
----
+***
 
 # _WSL2 Quick Facts_
 ## 
@@ -241,13 +241,13 @@ _PyCharm also works great on Windows._
 
 </div>
 
----
+***
 
 # _One-click install of Linux distributions_
 
 <img src="images/store.png" height="400" class="nb"/>
 
----
+***
 
 # _DEMO #1_
 ## _LINUX ON WINDOWS, WITH TERMINAL_
@@ -259,40 +259,40 @@ _PyCharm also works great on Windows._
 
 <img src="images/code+wsl1.png" class="nb"/>
 
----
+***
 
 # _Code + Remote + Linux_
 ## _Windows-side Code, connected to Linux_
 
 <img src="images/code+wsl2.png" class="nb"/>
 
----
+***
 
 # _Code + Remote + Linux_
 ## _Courtesy of Remote extension_
 
 <img src="images/code+wsl3.png" class="nb"/>
 
----
+***
 
 # _Code + Remote + Linux_
 ## _Extensions work across boundaries_
 
 <img src="images/code+wsl4.png" class="nb"/>
 
----
+***
 
 # _DEMO #2_
 ## _Code + Remote + Linux_
 
----
+***
 
 # _WSL2 IS IN PREVIEW_
 ## _JOIN THE INSIDER PROGRAM (Fast ring)_
 
 <img src="images/insiderprogram.png" class="nb"/>
 
----
+***
 # _You also need to know_
 ## _So you can avoid pain_
 
@@ -306,7 +306,7 @@ _PyCharm also works great on Windows._
 
 _(*) in PowerShell, as admin_
 
----
+***
 
 ## _Suggested reading_ 
 
