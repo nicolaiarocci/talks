@@ -45,11 +45,6 @@ _2. Make your code "just work" on Windows_
 _3. Wonders of Python development on Windows_
 
 </div>
-<div class="fragment">
-
-_(Not kidding about #3)_
-
-</div>
 
 ***
 
@@ -109,8 +104,8 @@ _(Not kidding about #3)_
 </div>
 <div class="fragment">
 
-- Use `str` and let Python handle OS conversions.
-  Do your own IO stream conversions
+- Use `str` to let Python handle encoding at OS boundaries.
+  Do your own IO stream conversions.
 
 </div>
 <div class="fragment">
@@ -119,7 +114,7 @@ _(Not kidding about #3)_
 
 </div>
 
-(more info at https://youtu.be/uoI57uMdDD4)
+more info at https://youtu.be/uoI57uMdDD4
 
 ***
 
@@ -197,9 +192,9 @@ _PyCharm also works great on Windows._
 - Fully configurable and custimizable via json 
 - Multiple profiles
 - Cascadia Code font, with ligatures (Preview)
-- Terminal is Open Source ([link](https://github.com/Microsoft/Terminal)) 
+- Open Source ([link](https://github.com/Microsoft/Terminal)) 
 
-(cool video at https://aka.ms/terminal-video)
+cool video at https://aka.ms/terminal-video
 
 ***
 
@@ -254,47 +249,15 @@ _PyCharm also works great on Windows._
 
 ***
 
-# _Code + Remote + Linux_
-## _What are we looking at?_
-
-<img src="images/code+wsl1.png" class="nb"/>
-
-***
-
-# _Code + Remote + Linux_
-## _Windows-side Code, connected to Linux_
-
-<img src="images/code+wsl2.png" class="nb"/>
-
-***
-
-# _Code + Remote + Linux_
-## _Courtesy of Remote extension_
-
-<img src="images/code+wsl3.png" class="nb"/>
-
-***
-
-# _Code + Remote + Linux_
-## _Extensions work across boundaries_
-
-<img src="images/code+wsl4.png" class="nb"/>
-
-***
-
-# _DEMO #2_
-## _Code + Remote + Linux_
-
-***
-
 # _WSL2 IS IN PREVIEW_
 ## _JOIN THE INSIDER PROGRAM (Fast ring)_
 
 <img src="images/insiderprogram.png" class="nb"/>
 
 ***
+
 # _You also need to know_
-## _So you can avoid pain_
+## _Spare yourself some pain_
 
 - BIOS virtualization must be active
 - Virtual Machine Platform feature must be active
@@ -308,6 +271,113 @@ _(*) in PowerShell, as admin_
 
 ***
 
+# _However..._
+## _One small problem_
+
+<div class="fragment">
+
+- WSL has no GUI
+
+</div>
+
+<div class="fragment">
+
+- You can't install a visual tool like VSCode
+
+</div>
+
+<div class="fragment">
+
+- We do have interop between Windows and Linux
+
+</div>
+<div class="fragment">
+
+- Microsoft recommends that you do not alter files in the WSL side with Windows programs...
+
+</div>
+
+' The WSL has no GUI, so you can’t install a visual tool like VS Code. 
+' That needs to be installed on the Windows side. 
+' This presents a problem because you have a program running on the Windows side accessing files on the Linux side, and this can result in all manor of quirks and “permission denied” issues. 
+' As a general rule of thumb, Microsoft recommends that you not alter files in the WSL side with Windows programs.
+
+
+***
+
+
+# _Remote extension_
+## _to the rescue_
+
+<img src="images/code+wsl1.png" class="nb"/>
+
+***
+
+# _Code + Remote + WSL2_
+## _Windows-side Code, connected to Linux_
+
+<img src="images/code+wsl2.png" class="nb"/>
+
+***
+
+# _Code + Remote + WSL2_
+## _Courtesy of Remote extension_
+
+<img src="images/code+wsl3.png" class="nb"/>
+
+***
+
+# _Code + Remote + WSL2_
+## _Extensions work across boundaries_
+
+<img src="images/code+wsl4.png" class="nb"/>
+
+***
+
+# _DEMO #2_
+## _Code + Remote + WSL_
+
+***
+
+# _BTW Remote extension_
+## _Connects to_
+
+- Windows Subsystem or Linux
+- Remote hosts via SSH
+- Docker containers
+    - [Docker Desktop WSL 2 Tech Preview](https://docs.docker.com/docker-for-windows/wsl-tech-preview/)<br/> 
+    (docker running inside linux, inside windows!)
+
+***
+
+# _Python in the WSL_
+## _Key points_
+
+- Run Windows and Linux side-by-side
+- Multiple linux distros, one-click away
+- No heavyweight VMs
+- Leverage your existing bash/linux skills
+- Powerful desktop applications
+- Rich eco-system (omg games!)
+- Innovation happens right here
+
+***
+
+# _QUESTIONS?_
+
+- WSL2 uses Hyper-V
+    - VirtualBox 6+ -OK!
+    - Hypervisor Platform API for third-party virtualization providers
+- WSL2 can run in a VM
+    - Needs nested virtualization enabled
+- Networking apps? 
+    - Yes! Will have different IP than host _*_
+- GPU is currently a no go _*_
+
+_* high on the backlog_
+
+***
+
 ## _Suggested reading_ 
 
 <img src="images/reading.png" class="nb"/>
@@ -316,9 +386,8 @@ Smashing Magazine ([link](https://www.smashingmagazine.com/2019/09/moving-javasc
 
 ***
 
-# _Thank You!_
+# _Thank You_
 
 <br/><br/><br/><br/><br/><br/>
-
-Nicola Iarocci<br/>
-[@nicolaiarocci](https://twitter.com/nicolaiarocci)
+[@nicolaiarocci](https://twitter.com/nicolaiarocci)<br/>
+_thanks: [@zooba](https://twitter.com/zooba) [@burkeholland](https://www.smashingmagazine.com/2019/09/moving-javascript-development-bash-windows/)_
