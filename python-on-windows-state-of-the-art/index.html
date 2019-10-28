@@ -56,7 +56,6 @@
 <a href="https://twitter.com/nicolaiarocci">@nicolaiarocci</a></p>
 </section>
 <section >
-<section >
 <h1>Question</h1>
 <p>How many of you in this room are on Windows?
 <div class="fragment"></p>
@@ -75,12 +74,7 @@
 <div class="fragment">
 <p><em>3. Wonders of Python development on Windows</em></p>
 </div>
-<div class="fragment">
-<p><em>(Not kidding about #3)</em></p>
-</div>
 </section>
-</section>
-<section >
 <section >
 <img src="images/PyPI_downloads_by_OS.png" class="nb"/>
 </section>
@@ -110,7 +104,6 @@
 <h2>Python userbase (our perception)</h2>
 <img src="images/community_2.png" class="nb"/>
 </section>
-</section>
 <section >
 <h2>Make sure your libs "just work" on Windows</h2>
 <div class="fragment">
@@ -131,8 +124,8 @@
 <div class="fragment">
 <ul>
 <li>
-Use <code>str</code> and let Python handle OS conversions.
-Do your own IO stream conversions
+Use <code>str</code> to let Python handle encoding at OS boundaries.
+Do your own IO stream conversions.
 </li>
 </ul>
 </div>
@@ -141,7 +134,7 @@ Do your own IO stream conversions
 <li>Get CI, collaborate, or...</li>
 </ul>
 </div>
-<p>(more info at <a href="https://youtu.be/uoI57uMdDD4)">https://youtu.be/uoI57uMdDD4)</a></p>
+<p>more info at <a href="https://youtu.be/uoI57uMdDD4">https://youtu.be/uoI57uMdDD4</a></p>
 </section>
 <section >
 <h2><em>Python development <span style="font-weight:300">on Windows</span></em></h2>
@@ -198,7 +191,6 @@ Do your own IO stream conversions
 <p><em>PyCharm also works great on Windows.</em></p>
 </section>
 <section >
-<section >
 <h1><em>Windows Terminal (Preview)</em></h1>
 <img src="images/terminal.jpeg" class="nb"/>
 </section>
@@ -212,12 +204,10 @@ Do your own IO stream conversions
 <li>Fully configurable and custimizable via json</li>
 <li>Multiple profiles</li>
 <li>Cascadia Code font, with ligatures (Preview)</li>
-<li>Terminal is Open Source (<a href="https://github.com/Microsoft/Terminal">link</a>)</li>
+<li>Open Source (<a href="https://github.com/Microsoft/Terminal">link</a>)</li>
 </ul>
-<p>(cool video at <a href="https://aka.ms/terminal-video)">https://aka.ms/terminal-video)</a></p>
+<p>cool video at <a href="https://aka.ms/terminal-video">https://aka.ms/terminal-video</a></p>
 </section>
-</section>
-<section >
 <section >
 <h1>Windows Subsystem for Linux 2</h1>
 <img src="images/runwsl.gif" height="400" class="nb"/>
@@ -259,32 +249,6 @@ Do your own IO stream conversions
 <h1><em>DEMO #1</em></h1>
 <h2><em>LINUX ON WINDOWS, WITH TERMINAL</em></h2>
 </section>
-</section>
-<section >
-<section >
-<h1><em>Code + Remote + Linux</em></h1>
-<h2><em>What are we looking at?</em></h2>
-<img src="images/code+wsl1.png" class="nb"/>
-</section>
-<section >
-<h1><em>Code + Remote + Linux</em></h1>
-<h2><em>Windows-side Code, connected to Linux</em></h2>
-<img src="images/code+wsl2.png" class="nb"/>
-</section>
-<section >
-<h1><em>Code + Remote + Linux</em></h1>
-<h2><em>Courtesy of Remote extension</em></h2>
-<img src="images/code+wsl3.png" class="nb"/>
-</section>
-<section >
-<h1><em>Code + Remote + Linux</em></h1>
-<h2><em>Extensions work across boundaries</em></h2>
-<img src="images/code+wsl4.png" class="nb"/>
-</section>
-<section >
-<h1><em>DEMO #2</em></h1>
-<h2><em>Code + Remote + Linux</em></h2>
-</section>
 <section >
 <h1><em>WSL2 IS IN PREVIEW</em></h1>
 <h2><em>JOIN THE INSIDER PROGRAM (Fast ring)</em></h2>
@@ -292,7 +256,7 @@ Do your own IO stream conversions
 </section>
 <section >
 <h1><em>You also need to know</em></h1>
-<h2><em>So you can avoid pain</em></h2>
+<h2><em>Spare yourself some pain</em></h2>
 <ul>
 <li>BIOS virtualization must be active</li>
 <li>Virtual Machine Platform feature must be active</li>
@@ -305,16 +269,125 @@ Do your own IO stream conversions
 <p><em>(*) in PowerShell, as admin</em></p>
 </section>
 <section >
+<h1><em>However...</em></h1>
+<h2><em>One small problem</em></h2>
+<div class="fragment">
+<ul>
+<li>WSL has no GUI</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>You can't install a visual tool like VSCode</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>We do have interop between Windows and Linux</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Microsoft recommends that you do not alter files in the WSL side with Windows programs...</li>
+</ul>
+</div>
+<aside class="notes">
+The WSL has no GUI, so you can’t install a visual tool like VS Code. <br/>
+That needs to be installed on the Windows side. <br/>
+This presents a problem because you have a program running on the Windows side accessing files on the Linux side, and this can result in all manor of quirks and “permission denied” issues. <br/>
+As a general rule of thumb, Microsoft recommends that you not alter files in the WSL side with Windows programs.<br/>
+</aside>
+</section>
+<section >
+<h1><em>Remote extension</em></h1>
+<h2><em>to the rescue</em></h2>
+<img src="images/code+wsl1.png" class="nb"/>
+</section>
+<section >
+<h1><em>Code + Remote + WSL2</em></h1>
+<h2><em>Windows-side Code, connected to Linux</em></h2>
+<img src="images/code+wsl2.png" class="nb"/>
+</section>
+<section >
+<h1><em>Code + Remote + WSL2</em></h1>
+<h2><em>Courtesy of Remote extension</em></h2>
+<img src="images/code+wsl3.png" class="nb"/>
+</section>
+<section >
+<h1><em>Code + Remote + WSL2</em></h1>
+<h2><em>Extensions work across boundaries</em></h2>
+<img src="images/code+wsl4.png" class="nb"/>
+</section>
+<section >
+<h1><em>DEMO #2</em></h1>
+<h2><em>Code + Remote + WSL</em></h2>
+</section>
+<section >
+<h1><em>BTW Remote extension</em></h1>
+<h2><em>Connects to</em></h2>
+<ul>
+<li>Windows Subsystem or Linux</li>
+<li>Remote hosts via SSH</li>
+<li>
+Docker containers
+<ul>
+<li>
+<a href="https://docs.docker.com/docker-for-windows/wsl-tech-preview/">Docker Desktop WSL 2 Tech Preview</a><br/> 
+(docker running inside linux, inside windows!)
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section >
+<h1><em>Python in the WSL</em></h1>
+<h2><em>Key points</em></h2>
+<ul>
+<li>Run Windows and Linux side-by-side</li>
+<li>Multiple linux distros, one-click away</li>
+<li>No heavyweight VMs</li>
+<li>Leverage your existing bash/linux skills</li>
+<li>Powerful desktop applications</li>
+<li>Rich eco-system (omg games!)</li>
+<li>Innovation happens right here</li>
+</ul>
+</section>
+<section >
+<h1><em>QUESTIONS?</em></h1>
+<ul>
+<li>
+WSL2 uses Hyper-V
+<ul>
+<li>VirtualBox 6+ -OK!</li>
+<li>Hypervisor Platform API for third-party virtualization providers</li>
+</ul>
+</li>
+<li>
+WSL2 can run in a VM
+<ul>
+<li>Needs nested virtualization enabled</li>
+</ul>
+</li>
+<li>
+Networking apps?
+<ul>
+<li>Yes! Will have different IP than host <em>*</em></li>
+</ul>
+</li>
+<li>GPU is currently a no go <em>*</em></li>
+</ul>
+<p><em>* high on the backlog</em></p>
+</section>
+<section >
 <h2><em>Suggested reading</em></h2>
 <img src="images/reading.png" class="nb"/>
 <p>Smashing Magazine (<a href="https://www.smashingmagazine.com/2019/09/moving-javascript-development-bash-windows/">link</a>)</p>
 </section>
-</section>
 <section >
-<h1><em>Thank You!</em></h1>
-<br/><br/><br/><br/><br/><br/>
-<p>Nicola Iarocci<br/>
-<a href="https://twitter.com/nicolaiarocci">@nicolaiarocci</a></p>
+<h1><em>Thank You</em></h1>
+<p><br/><br/><br/><br/><br/><br/>
+<a href="https://twitter.com/nicolaiarocci">@nicolaiarocci</a><br/>
+<em>thanks: <a href="https://twitter.com/zooba">@zooba</a> <a href="https://www.smashingmagazine.com/2019/09/moving-javascript-development-bash-windows/">@burkeholland</a></em></p>
 </section>
 
 
