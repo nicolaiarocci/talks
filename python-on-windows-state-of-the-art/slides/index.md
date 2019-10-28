@@ -1,4 +1,4 @@
-- title : Python on Windows
+- title : Python on Windows: State of the Art
 - description : The State of the Art of Developing with Python on Windows
 - author : Nicola Iarocci
 - theme : simple
@@ -6,23 +6,17 @@
 
 ***
 
-# _Python on Windows<br/><span style="font-weight:300">State of the Art</span>_
+# _Python on Windows_
 
-<br/><br/><br/><br/><br/><br/>
+## _<span style="font-weight:300">State of the Art</span>_
 
-Nicola Iarocci<br/>
-[@nicolaiarocci](https://twitter.com/nicolaiarocci)
+#### [@nicolaiarocci](https://twitter.com/nicolaiarocci)
 
 ***
 
 # Question
 
 How many of you in this room are on Windows?
-<div class="fragment">
-
-_I am not surprised_
-
-</div>
 
 ***
 
@@ -81,7 +75,7 @@ _3. Wonders of Python development on Windows_
 
 ***
 
-## Python userbase (our perception)
+## Our perception
 <img src="images/community_2.png" class="nb"/>
 
 ***
@@ -386,8 +380,9 @@ Smashing Magazine ([link](https://www.smashingmagazine.com/2019/09/moving-javasc
 
 ***
 
-# _Thank You_
+# _Thank You!_
+
+## [@nicolaiarocci](https://twitter.com/nicolaiarocci)<br/>
 
 <br/><br/><br/><br/><br/><br/>
-[@nicolaiarocci](https://twitter.com/nicolaiarocci)<br/>
-_thanks: [@zooba](https://twitter.com/zooba) [@burkeholland](https://www.smashingmagazine.com/2019/09/moving-javascript-development-bash-windows/)_
+_special thanks<br/> [@zooba](https://twitter.com/zooba)_
