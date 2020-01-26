@@ -1639,9 +1639,10 @@ How would you implement this?
 
 ***
 
-# _<span style="font-weight:300">Thank you</span><br/>_
-
-<br/><br/><br/><br/><br/><br/>
+# <span style="font-weight:300">Thank You!</span><br/>
+<p><img src="images/qrcode.gif" class="nb"/><br/>
+<small>https://nicolaiarocci.github.io/talks/fsharp-for-csharp-developers/</small></p>
+<br/><br/>
 
 **Nicola Iarocci**
 
