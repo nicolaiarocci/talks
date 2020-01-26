@@ -1,4 +1,4 @@
-- title : F# for the C# Developer
+- title : F# for the C# Developer (short version)
 - description : Introduction to F# and functional programming for the C# developer
 - author : Nicola Iarocci
 - theme : simple
